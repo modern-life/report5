@@ -10,15 +10,15 @@ echo "0入れないで！"
 	read i
 		if [ $i -eq 0 ];then
 		echo "0入れないで！"
+	
 
-		
 		elif expr $i : "[0-9]*$" >/dev/null ; then
-  	 	
+  		
 			x=$a
-	 		y=$i 	
-	:
+			y=$i 
 		while [ $y -ne 0 ];do		
-		keisan=$(( $x % $y ))
+	
+		keisan=$(( $x ))
 		x=$y
 		y=$keisan
 		  
@@ -26,8 +26,9 @@ echo "0入れないで！"
 	echo "$aと$iの最大公約数は$xです"
 	else 
 	echo "自然数を入れてください"	
+	exit 1
 	fi	
 else
 	echo"自然数を入れてください"
-
+exit 1
 fi
