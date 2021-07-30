@@ -13,7 +13,7 @@ diff ${ans} ${result} || echo "error in 1-1" >> ${err}
 
 #引数の数が3つ以上の場合
 
-echo "入力できる文字は2つまでです" >${ans}
+echo "入力できる文字は2つまでです" > ${ans}
 ./saidai.sh 1 2 3 > ${result}
 diff ${ans} ${result} || echo "error in 1-2"  >> ${err}
 
@@ -22,13 +22,13 @@ diff ${ans} ${result} || echo "error in 1-2"  >> ${err}
 
 echo "1つ目に入力した文字に問題があります 自然数を入れてください" > ${ans}
 ./saidai.sh a 10 > ${result}
-diff ${ans} ${result} || echo "error in 2-1"  >> ${err}
+diff ${ans} ${result} || echo "error in 2-1" >> ${err}
 
 #1つ目に入力されたが文字が0だった場合
 
 echo "1つ目に入力した文字に問題があります 0の最大公約数はありません" > ${ans}
 ./saidai.sh 0 9 > ${result}
-diff ${ans} ${result} || echo "error in 2-2"  >> ${err}
+diff ${ans} ${result} || echo "error in 2-2" >> ${err}
 
 
 #2つ目に入力された文字が自然数でなかった場合
