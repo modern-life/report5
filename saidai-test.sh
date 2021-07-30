@@ -1,4 +1,4 @@
-#!/bin.sh
+#!/bin/bash
 
 ans="/tmp/$$-ans"
 result="/tmp$$-result"
