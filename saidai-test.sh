@@ -6,6 +6,7 @@ err="/tmp/$$-error"
 
 
 #引数の数が足りない場合
+
 echo "文字を2つ入力してください" >${ans}
 ./saidai.sh 1 > ${result}
 diff ${ans} ${result} || echo "error in 1-1" >> ${err}
