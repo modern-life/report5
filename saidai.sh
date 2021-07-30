@@ -1,11 +1,11 @@
 #!/bin/bash
 
 
-if  [  $1 -eq 0  ] ;then
+if  [  "$1" = 0  ] ;then
 echo "1つ目に入力した文字に問題があります 0の最大公約数はありません"
 
 	elif expr $1 : "[0-9]*$" >/dev/null ; then  	 
-	if  [  $2 -eq 0  ] ;then
+	if  [  "$2" = 0  ] ;then
 		echo "2つ目に入力した文字に問題があります  0の最大公約数はありません"
 		elif expr $2 : "[0-9]*$" >/dev/null ;   then
 		
