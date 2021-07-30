@@ -1,14 +1,13 @@
 #!/bin/bash
 
 
-if [ $#  -eq 1 ] ;then
+if [ $# -eq 1 ] ;then
 echo "文字を2つ入力してください"  1>&2
 exit 1
 fi
 
-if [ $# -ge 3 ] ;then
-	
-echo "入力できる文字は２つまでです"
+if [ $# -ge 3 ] ;then	
+echo "入力できる文字は2つまでです"
 exit 1
 fi
 
