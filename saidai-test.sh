@@ -34,7 +34,7 @@ diff ${ans} ${result} || exit 1
 #2つの文字がどちらも自然数だった場合-最大公約数判定
 
 echo "$1と$2の最大公約数は$eです" > ${ans}
-./saidai/sh 20 30 > ${result}
+./saidai.sh 20 30 > ${result}
 diff ${ans} ${result} || exit 0
 
 
