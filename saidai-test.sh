@@ -1,7 +1,7 @@
 #!/bin/bash
 
 ans="/tmp/$$-ans"
-result="/tmp$$-result"
+result="/tmp/$$-result"
 
 
 
