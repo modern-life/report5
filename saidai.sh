@@ -24,15 +24,15 @@ echo "1つ目に入力した文字に問題があります 0の最大公約数�
   		e=$2
 
 		fi
-			while [ $e -ne  0 ] ;do
-			x=`expr $1 % $e`
-			y=`expr $2 % $e`
-			if  [ $x -eq 0 -a $y -eq 0  ] ;then
+			while [ "$e" -ne  0 ] ;do
+				x=$(("$1" % "$e"))
+				y=$(("$2" % "$e"))
+			if  [ "$x" = 0 ] && [ "$y" = 0  ] ;then
 		echo "$1と$2の最大公約数は$eです"
 		break
 
 	fi
-	e=`expr $e - 1`
+	e=$(("$e" - 1 ))
 	done
 	else 
 	echo "2つ目に入力した文字に問題があります 自然数を入れてください"	
