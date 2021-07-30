@@ -1,6 +1,5 @@
 #!/bin/bash
 
-
 if [ $# -eq 1 ] ;then
 echo "文字を2つ入力してください"  1>&2
 exit 1
