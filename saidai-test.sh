@@ -44,4 +44,4 @@ if [ -f ${err} ]; then
 	cat ${err}
 	rm /tmp/$$-*
 	exit 1
-
+fi
