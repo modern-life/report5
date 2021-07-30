@@ -22,7 +22,7 @@ diff ${ans} ${result} || exit 1
 
 echo "2つ目に入力した文字に問題があります 自然数を入れてください" > ${ans}
 ./saidai.sh 20 b > $[result]
-diff $[ans] $[result] || exit 1
+diff ${ans} ${result} || exit 1
 
 #2つ目に入力された文字が0だった場合
 
